@@ -78,3 +78,47 @@ INSERT INTO `users` (`user_id`, `full_name`, `email`, `password`, `role`, `creat
 (4, 'Chathura Silva', 'chathura@gmail.com', '123456', '', '2026-02-10 04:30:00'),
 (5, 'Ishara Jayasinghe', 'ishara@gmail.com', '123456', '', '2026-02-10 04:55:00'),
 (6, 'Ravindu Gunasekara', 'ravindu@gmail.com', '123456', 'admin', '2026-02-10 05:20:00');
+--
+-- Indexes for table `relief_requests`
+--
+ALTER TABLE `relief_requests`
+  ADD PRIMARY KEY (`request_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`user_id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `relief_requests`
+--
+ALTER TABLE `relief_requests`
+  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `relief_requests`
+--
+ALTER TABLE `relief_requests`
+  ADD CONSTRAINT `relief_requests_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
