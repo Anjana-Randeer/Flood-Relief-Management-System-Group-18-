@@ -67,3 +67,14 @@ CREATE TABLE `users` (
   `role` enum('admin','user') NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `full_name`, `email`, `password`, `role`, `created_at`) VALUES
+(1, 'Rushini', 'rushini@gmail.com', 'rush123', 'user', '2026-02-10 03:20:15'),
+(2, 'Tharindu Fernando', 'tharindu@gmail.com', '123456', '', '2026-02-10 03:40:00'),
+(3, 'Dilani Perera', 'dilani@gmail.com', '123456', '', '2026-02-10 04:00:00'),
+(4, 'Chathura Silva', 'chathura@gmail.com', '123456', '', '2026-02-10 04:30:00'),
+(5, 'Ishara Jayasinghe', 'ishara@gmail.com', '123456', '', '2026-02-10 04:55:00'),
+(6, 'Ravindu Gunasekara', 'ravindu@gmail.com', '123456', 'admin', '2026-02-10 05:20:00');
