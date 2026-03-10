@@ -25,3 +25,8 @@ function confirmDeletion(type) {
     const action = type === 'user' ? 'delete this user' : 'remove this relief request';
     return confirm(`Are you sure you want to ${action}?`);
 }
+//4. View User Details 
+ 
+function viewUserDetails(userId) {
+    window.location.href = 'user_details.php?id=' + userId;
+}
