@@ -18,3 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+ //3.User delete confimation alert
+ 
+function confirmDeletion(type) {
+    const action = type === 'user' ? 'delete this user' : 'remove this relief request';
+    return confirm(`Are you sure you want to ${action}?`);
+}
