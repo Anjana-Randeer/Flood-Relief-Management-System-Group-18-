@@ -10,4 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-   
+    // 2. User Registraion form submission 
+    const signupForm = document.getElementById('signupForm');
+    if (signupForm) {
+        signupForm.addEventListener('submit', function() {
+            
+        });
+    }
+});
