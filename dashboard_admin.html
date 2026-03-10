@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <span>Flood Relief System | Admin Dashboard</span>
+    <a href="logout.php">Logout</a>
+</nav>
+<div class="container">
+    <h3>System Summary Report</h3>
+    <div class="stats-grid">
+        <div class="card">
+            <h4>Total Users</h4>
+            <p style="font-size:2rem; font-weight:bold; color:#004085;"></p>
+        </div>
+        <div class="card">
+            <h4>High Severity</h4>
+            <p style="font-size:2rem; font-weight:bold; color:#dc3545;"></p>
+        </div>
+        <div class="card">
+            <h4>Food Requests</h4>
+            <p style="font-size:2rem; font-weight:bold; color:#28a745;"></p>
+        </div>
+    </div>
+
+    <h3>Filter Relief Requests</h3>
+    <form method="GET" style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <select name="area">
+            <option value="">All Districts</option>
+                <option>
+                </option>
+        </select>
+        <select name="type">
+            <option value="">All Relief Types</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Filter</button>
+        <a href="dashboard_admin.php" class="btn btn-danger">Clear</a>
+    </form>
+
+    <h3>Relief Requests</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Type</th>
+                    <th>District</th>
+                    <th>Severity</th>
+                    <th>Contact</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <?php endwhile; else: ?>
+                <tr><td colspan="6" style="text-align:center;">No requests found.</td></tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <h3 style="margin-top:30px;">All Registered Users</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                    <th>View</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary"
+                                onclick="viewUserDetails()">View User</button>
+                    </td>
+                </tr>
+               
+                <tr><td colspan="4" style="text-align:center;">No registered users found.</td></tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
