@@ -55,3 +55,15 @@ INSERT INTO `relief_requests` (`request_id`, `user_id`, `relief_type`, `district
 (28, 6, '', 'Galle', 'Habaraduwa', 'Meepe GN 06', 'Ravindu Gunasekara', '0784456721', 'No 17, School Lane, Habaraduwa', 7, '', 'House damaged badly, need temporary shelter', '2026-02-11 05:30:00');
 
 -- --------------------------------------------------------
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL,
+  `full_name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` enum('admin','user') NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
