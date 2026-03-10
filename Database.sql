@@ -24,3 +24,21 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `relief_requests`
+--
+
+CREATE TABLE `relief_requests` (
+  `request_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `relief_type` enum('Food','Water','Medicine','Shelter') NOT NULL,
+  `district` varchar(100) NOT NULL,
+  `divisional_secretariat` varchar(100) NOT NULL,
+  `gn_division` varchar(100) NOT NULL,
+  `contact_person` varchar(100) NOT NULL,
+  `contact_number` varchar(15) NOT NULL,
+  `address` text NOT NULL,
+  `family_members` int(11) NOT NULL,
+  `flood_severity` enum('Low','Medium','High') NOT NULL,
+  `description` text DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
