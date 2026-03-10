@@ -1,0 +1,13 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Request form submission and checking if there any empty required areas.
+    const reliefForm = document.getElementById('reliefForm');
+    if (reliefForm) {
+        reliefForm.addEventListener('submit', function(event) {
+            if (!this.checkValidity()) {
+                event.preventDefault();
+                alert("Please fill out all required fields before submitting.");
+            }
+        });
+    }
+
+   
