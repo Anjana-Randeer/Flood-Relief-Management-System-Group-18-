@@ -7,22 +7,22 @@ The system provides a digital bridge between affected individuals and administra
 
 ## 🛠️ Technologies Used
 This application is built using a complete full-stack approach without external frameworks:
-**Frontend:** HTML, CSS, and JavaScript (for client-side interactions and form validation).
-**Backend:** PHP (server-side processing).
-**Database:** MySQL managed via phpMyAdmin.
+    **Frontend:** HTML, CSS, and JavaScript (for client-side interactions and form validation).
+    **Backend:** PHP (server-side processing).
+    **Database:** MySQL managed via phpMyAdmin.
 
 ## ✨ Key Features
 
 ### For Affected Individuals (Users)
-**Authentication:** Secure registration and login functionality.
-**Request Management:** Submit new relief requests including type (food, medicine, shelter), location, and severity level.
-**CRUD Operations:** View, update, and delete personal relief requests as needed.
+    **Authentication:** Secure registration and login functionality.
+    **Request Management:** Submit new relief requests including type (food, medicine, shelter), location, and severity level.
+    **CRUD Operations:** View, update, and delete personal relief requests as needed.
 
 ### For Administrators
-**Admin Dashboard:** Centralized view of all system data and relief requests.
-**User Management:** View detailed information for each user or remove users from the system.
-**Data Filtering:** Filter requests based on districts or relief types.
-**Reporting:** Generate simple summary reports, including total users, high-severity cases, and specific request counts.
+    **Admin Dashboard:** Centralized view of all system data and relief requests.
+    **User Management:** View detailed information for each user or remove users from the system.
+    **Data Filtering:** Filter requests based on districts or relief types.
+    **Reporting:** Generate simple summary reports, including total users, high-severity cases, and specific request counts.
 
 ## 🗄️ Database Structure
 The system utilizes a relational database (`flood_relief_db`) with two primary tables:
@@ -32,10 +32,10 @@ The system utilizes a relational database (`flood_relief_db`) with two primary t
 ## 👥 Group Members 
 **Group Number:** 18 
 
-**Dihini Karannagoda**
-**Anjana Randeer**
-**Rushini Keshani**
-**Pamodith Rathnaweera**
+   **Dihini Karannagoda**
+   **Anjana Randeer**
+   **Rushini Keshani**
+   **Pamodith Rathnaweera**
 
 ## 🔗 Repository
 [https://github.com/Anjana-Randeer/Flood-Relief-Management-System-Group-18-.git](https://github.com/Anjana-Randeer/Flood-Relief-Management-System-Group-18-.git)
